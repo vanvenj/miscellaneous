@@ -6,9 +6,10 @@
 |工作表|worksheet|
 |单元格|Cell|
 |单元格区域|Range|
+
 ## 文件名后缀
 |文件名|备注|
-|--|--|
+|:--|:--|
 |Book1.xlsx|Excel 2007以后的而版本|
 |Book1.xlsm|启用宏的工作簿|
 |Book1.xlam|加载宏|
@@ -27,14 +28,14 @@ Application.ScreenUpdating = False
 Application.ScreenUpdating = True
 ```
 - Workbooks
-```
+```VBA
 Workbooks.Count
 Workbooks(1).Name
 ActiveWorkbook.Name
 ```
 
 - Worksheets
-```
+```VBA
 Sheets.Count
 Sheets(1).Name
 ActiveSheet.Name
@@ -42,7 +43,7 @@ Workbooks(1).Sheets(1).Visible = False
 ```
 
 - **Range**
-```
+```VBA
 '选择区域
 Range("A1:A10").Select
 '选择列
@@ -63,14 +64,14 @@ Next c
 ```
 
 - Cells
-```
+```VBA
 'Range的一个特例
 Cells(1,2).Select
 ```
 
 # 3.VBA语法
 - 判断
-```
+```VBA
 n = 11
 If n Mod 2 Then
     MsgBox "odd"
@@ -80,7 +81,7 @@ End If
 ```
 
 - 循环
-```
+```VBA
 ' example 1
 For i = 10 To 0 Step -2
     Debug.Print i
